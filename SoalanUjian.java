@@ -1,18 +1,17 @@
-import java.util.Scanner;
 import java.io.*;
 public class SoalanUjian{
     public static void main(String[] args) throws IOException{
         
         BufferedReader object=new BufferedReader(new InputStreamReader(System.in));
 
-        Scanner input = new Scanner(System.in);
+        
         System.out.println("Hello, saya adalah UjianBot!");
         System.out.println("Sila masukkan nama anda:");
-        String namaP = input.next();
+        String namaP = object.readLine();
 
-        Scanner scan = new Scanner(System.in);
+        
         System.out.println("Welcome, " + namaP + "!, Adakah anda sedia untuk ujian anda? Y/N? *jawab dalam huruf besar*");
-        String pilihanUjian = scan.nextLine();
+        String pilihanUjian = object.readLine();
         if (pilihanUjian.equals("Y")) {
             System.out.println("OK!, mari sambungkan dengan ujian!");
         } else {
@@ -25,7 +24,7 @@ public class SoalanUjian{
         System.out.println("A) Nombor tanpa titik perpuluhan");
         System.out.println("B) Nombor yang ada titik perpuluhan");
         System.out.println("C) Nombor yang ada atau tiada titik perpuluhan");
-        String jawapanPertama = input.next();
+        String jawapanPertama = object.readLine();
         int markahjawapanPertama = 1;
         if (jawapanPertama.equals("A")){
             markahjawapanPertama = 20;
@@ -48,7 +47,7 @@ public class SoalanUjian{
         System.out.println("A) Mengisytihar nilai constants dalam Java");
         System.out.println("B) Nilai pemalar atau nilai yang tidak akan berubah semasa aturcara dilaksanakan");
         System.out.println("C) Perkataan simpanan dalam Java yang mempunyai makna tertentu kepada compilier");
-        String jawapanKedua = input.next();
+        String jawapanKedua = object.readLine();
         int markahjawapanKedua = 1;
         if (jawapanKedua.equals("C")){
             markahjawapanKedua = 20;
@@ -71,7 +70,7 @@ public class SoalanUjian{
         System.out.println("A) Bentuk integer atau double menggunakan arahan tertentu");
         System.out.println("B) Menyimpan sekumpulan data yang terdiri daripada jenis yang sama");
         System.out.println("C) Kenyataan dilaksanakan sebaris demi sebaris");
-        String jawapanKetiga = input.next();
+        String jawapanKetiga = object.readLine();
         int markahjawapanKetiga = 1;
         if (jawapanKetiga.equals("B")){
             markahjawapanKetiga = 20;
@@ -95,7 +94,7 @@ public class SoalanUjian{
             System.out.println("A) Satu segmen aturcara yang melaksanakan tugas khusus");
             System.out.println("B) Sesuai untuk pengulangan yang dikawal oleh pembilangan iaitu jika telah pasti bilangan ulangan");
             System.out.println("C) Pemilihan dilakukan dari beberapa pililhan berganda berdasarkan nilai tertentu yang telah ditetapkan");
-            String jawapanKeempat = input.next();
+            String jawapanKeempat = object.readLine();
             int markahjawapanKeempat = 1;
         if (jawapanKeempat.equals("C")){
                 markahjawapanKeempat = 20;
