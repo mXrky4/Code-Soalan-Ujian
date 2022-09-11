@@ -1,0 +1,7 @@
+1. Masukkkan nama
+2. Terminal akan bagi 3 soalan dengan 3 pilihan
+3.Terminal akan ucap hello kepada "nama pelajar"
+4. Terminal akan beri peratus markah: "Peratus markah untuk 3 soalan yang anda jawab tadi adalah: "markahPelajar"
+5. Terminal juga akan bagi jawapan betul untuk 3 soalan tersebut
+
+
