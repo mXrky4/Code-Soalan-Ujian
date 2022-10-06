@@ -6,6 +6,9 @@ public class SoalanUjian{
 
         
         System.out.println("Hello, saya adalah UjianBot!");
+        System.out.println("Peraturan untuk menjawab soalan ini adalah");
+        System.out.println("anda haruslah menjawab soalan mengikut kehendak soalan");
+        Systen.out.println("Jika anda salah menjawab, UjianBot akan mengulang sekali lagi");
         System.out.println("Sila masukkan nama anda:");
         String namaP = object.readLine();
 
@@ -20,6 +23,7 @@ public class SoalanUjian{
         }
         
         //Soalan 1
+        System.out.println("Jawapan hendaklah dalam huruf besar")
         System.out.println("Soalan 1: Data Integer/Int digunakan untuk masukkan data apa?");
         System.out.println("A) Nombor tanpa titik perpuluhan");
         System.out.println("B) Nombor yang ada titik perpuluhan");
@@ -126,7 +130,23 @@ public class SoalanUjian{
  
         System.out.println("Hello, "+ namaP + "! Markah anda untuk ujian ini adalah " + Jumlah+ "%");
         System.out.println("Gred anda untuk ujian ini adalah " + grade);
-        System.out.println("Tahniah " +namaP + "!");
+
+        if (grade="A");{
+            System.out.println("Tahniah, "+ namaP + "Anda telah berjaya lulus ujian tersebut !");
+        }
+        else if (grade="B");{
+            System.out.println("Tahniah, "+ namaP + "Usahakan lagi !");
+        }
+        else if (grade="C");{
+            System.out.println("Boleh lah, "+ namaP + "Cuba lagi !")
+        }
+        else if (grade="D");{
+            System.out.println("Anda gagal, "+  namaP + "Usahakan lagi untuk mencuba !")
+        }
+        else if (grade="E");{
+            System.out.printlln("Anda gagal, "+ namaP + "Usahakan lagi untuk mencuba")
+        }
+
         System.out.println("UjianBot sentiasa bersedia untuk menguji anda!");
     
         System.out.println("░░░░░░░░░░░░▄▄▄█████████▄▄▄▄░░░░░░░░░░░░");
